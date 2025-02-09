@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculadora de Média</title>
+</head>
+<body>
+    <h1>Calculo de Média de Alunos</h1>
+    Digite a Primera Nota: <input type="number" id="nota1">
+    <p></p>
+    Digite a Segunda Nota: <input type="number" id="nota2">
+    <p></p>
+    <input type="submit" value="Enviar Dados" onclick="calcular()">
+    <div id="resp"></div>
+    <script>
+        var nota1 = document.getElementById('nota1')
+        var nota2 = document.getElementById('nota2')
+        var resp = document.getElementById('resp')
+        function calcular(){
+            var n1 = Number(nota1.value)
+            var n2 = Number(nota2.value)
+            var cal = (n1 + n2)/ 2
+            console.log(cal)
+            resp.innerHTML = `A nota do Aluno é: ${cal}`
+            if( cal < 6){
+                var falt = 6 - cal
+                resp.innerHTML += `<p>Faltam ainda ${falt} pontos para o aluno atingir a média</p>`
+            }
+        }
+    </script>
+</body>
+</html>
