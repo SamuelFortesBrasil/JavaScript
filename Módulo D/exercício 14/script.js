@@ -3,10 +3,10 @@ function carregar(){
     var img = document.getElementById('imagem')
     var musica = document.getElementById('musica')
     var data = new Date()
-     var hora = 19
-     var minutos = 23 
-    //var hora = data.getHours()
-    //var minutos = data.getMinutes()
+     //var hora = 19
+     //var minutos = 23 
+     var hora = data.getHours()
+     var minutos = data.getMinutes()
     //Operador ternário para quando tiver 0 à esquerda dos minutos 17:08 por exemplo
     minutos = minutos < 10 ? '0' + minutos : minutos
 
