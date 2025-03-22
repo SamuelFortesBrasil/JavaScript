@@ -1,0 +1,40 @@
+* {
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(10, 129, 129);
+}
+header{
+  margin:20px;   
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+section{
+    background-color: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px rgb(24, 24, 24);
+}
+#foto{
+  display: block;
+  margin: auto;
+}
+#ver{
+    width: 120px;
+    height: 25px;
+    font-size: 18px;
+}
+p{
+    padding: 3px;
+    font-size: 20px;
+}
+footer{
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(8, 117, 117);
+    color: white;
+}
